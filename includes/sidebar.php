@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar
+    <title>BoTechA
     </title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/main.css">
@@ -26,7 +26,9 @@
                 </div>
             </div>
             <div class="icon-logo">
-                <img src="src/img/botecha.png" alt="Logo">
+                <a href="dashboard.php">
+                    <img src="src/img/botecha.png" alt="Logo">
+                </a>
                 <div class="brand-info">
                     <div class="brand-name">Bo-Tech-A</div>
                 </div>
@@ -35,14 +37,14 @@
 
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="dashboard.php" class="sidebar-link">
                         <i class="lni lni-home"></i>
                         <span>Dashboard
                         </span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="categories.php" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>Categories</span>
                     </a>
@@ -57,6 +59,12 @@
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-circle-plus"></i>
                         <span>Add Product</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-invest-monitor"></i>
+                        <span>Stock</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
