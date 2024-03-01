@@ -47,8 +47,8 @@ body {
 }
 
 #sidebar.expand {
-    width: 260px;
-    min-width: 260px;
+    width: 230px;
+    min-width: 230px;
 }
 
 .toggle-btn {
@@ -75,10 +75,13 @@ body {
 }
 
 .icon-logo {
+    display: flex;
+    align-items: center;
     text-align: center; 
-    margin-top: auto; /* Center vertically */
-    margin-bottom: auto; /* Center vertically */
+    margin-top: auto; 
+    margin-bottom: auto; 
     margin-right: 5px;
+    margin-left: 8px;
 }
 
 .icon-logo img {
@@ -86,6 +89,29 @@ body {
     height: auto; 
     display: inline-block; 
     border-radius: 50px; 
+    color: #FFF;
+}
+
+.brand-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px; 
+}
+
+.brand-name {
+    color: #FFF;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.icon-logo .brand-info {
+    display: none; 
+}
+
+#sidebar.expand .icon-logo .brand-info {
+    display: flex; 
+    margin-left: 15px;
 }
 
 #sidebar:not(.expand) .sidebar-logo,
@@ -122,37 +148,22 @@ a.sidebar-link:hover {
     position: relative;
 }
 
-#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    background-color: #0e2238;
-    padding: 0;
-    min-width: 15rem;
-    display: none;
-}
+.col-md-4.mb-3 {
+    margin-bottom: 20px;
+  }
+  
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
 
-#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
-    display: block;
-    max-height: 15em;
-    width: 100%;
-    opacity: 1;
-}
-
-#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
-    border: solid;
-    border-width: 0 .075rem .075rem 0;
-    content: "";
-    display: inline-block;
-    padding: 2px;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.4rem;
-    transform: rotate(-135deg);
-    transition: all .2s ease-out;
-}
-
-#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
-    transform: rotate(45deg);
-    transition: all .2s ease-out;
-}
+form button {
+    margin-top: 10px;
+  }
+  
+table,
+th,
+tr,
+td {
+      border: color #ddd;
+  }

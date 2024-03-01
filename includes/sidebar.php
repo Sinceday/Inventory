@@ -6,14 +6,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categories
+    <title>Sidebar
     </title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../src/css/main.css">
-    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
+
     <div class="wrapper">
         <aside id="sidebar">
             <div class="d-flex">
@@ -21,12 +22,16 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <a href="#">BoTecha</a>
+                    <a href="#">Inventory</a>
                 </div>
             </div>
             <div class="icon-logo">
-                <img src="../src/img/botecha.png" alt="Logo">
+                <img src="src/img/botecha.png" alt="Logo">
+                <div class="brand-info">
+                    <div class="brand-name">Bo-Tech-A</div>
+                </div>
             </div>
+
 
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
@@ -39,42 +44,31 @@
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
-                        <span>Supplier List</span>
+                        <span>Categories</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-list"></i>
-                        <span>Item List</span>
+                        <span>Manage Products</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
-                        <i class="lni lni-book"></i>
-                        <span>Purchase Orders</span>
+                        <i class="lni lni-circle-plus"></i>
+                        <span>Add Product</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#inv" aria-expanded="false" aria-controls="inv">
-                        <i class="lni lni-briefcase"></i>
-                        <span>Inventory</span>
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-exit"></i>
+                        <span>Logout</span>
                     </a>
-                    <ul id="inv" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Categories</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Manage Products</a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </aside>
-        <div class="main">
-        </div>
-    </div>
 
-    <script src="../src/js/script.js"></script>
+        <script src="src/js/script.js"></script>
 </body>
 
 </html>
