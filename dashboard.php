@@ -27,6 +27,16 @@ include 'includes/sidebar.php';
                 </a>
             </div>
             <div class="col-md-3">
+                <a href="media.php" class="card-link">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="lni lni-gallery" style="font-size: 65px;"></i>
+                            <h5 class="card-title">Media</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
                 <a href="stock.php" class="card-link">
                     <div class="card">
                         <div class="card-body">
@@ -36,6 +46,7 @@ include 'includes/sidebar.php';
                     </div>
                 </a>
             </div>
+
         </div>
     </div>
 </div>

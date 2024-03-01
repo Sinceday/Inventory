@@ -62,6 +62,12 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
+                    <a href="media.php" class="sidebar-link">
+                        <i class="lni lni-gallery"></i>
+                        <span>Media Product</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-invest-monitor"></i>
                         <span>Stock</span>
