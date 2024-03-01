@@ -1,13 +1,16 @@
+<?php include 'connect.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categories
     </title>
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../src/css/main.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
 <body>
@@ -18,12 +21,11 @@
                     <i class="lni lni-grid-alt"></i>
                 </button>
                 <div class="sidebar-logo">
-                    <a href="#"                    
-                    >BoTecha</a>
+                    <a href="#">BoTecha</a>
                 </div>
             </div>
             <div class="icon-logo">
-                <img src="src/img/botecha.png" alt="Logo">
+                <img src="../src/img/botecha.png" alt="Logo">
             </div>
 
             <ul class="sidebar-nav">
@@ -39,7 +41,7 @@
                         <i class="lni lni-agenda"></i>
                         <span>Supplier List</span>
                     </a>
-                </li>               
+                </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-list"></i>
@@ -53,8 +55,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#inv" aria-expanded="false" aria-controls="inv">
+                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse" data-bs-target="#inv" aria-expanded="false" aria-controls="inv">
                         <i class="lni lni-briefcase"></i>
                         <span>Inventory</span>
                     </a>
@@ -73,7 +74,7 @@
         </div>
     </div>
 
-    <script src="src/js/script.js"></script>
+    <script src="../src/js/script.js"></script>
 </body>
 
 </html>
