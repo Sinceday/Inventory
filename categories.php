@@ -45,7 +45,8 @@ include 'includes/sidebar.php';
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $row['name'] . "</td>";
                 echo "<td>";
-                echo "<button class='btn btn-primary'>Edit</button>&nbsp;";
+                echo "<a href=\"edit_category.php?id=$row[id]\" class='btn btn-primary'>Edit</a>&nbsp;  ";
+
                 echo "<button class='btn btn-danger ml-2'>Delete</button>";
                 echo "</td>";
                 echo "</tr>";
@@ -60,3 +61,4 @@ include 'includes/sidebar.php';
     </div>
   </div>
 </div>
+
