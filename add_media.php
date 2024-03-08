@@ -1,27 +1,29 @@
 <?php
 include 'includes/connect.php';
+// Directory
+$upload_dir = "uploads/";
 
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["mediaFile"])) {
-    $target_dir = "uploads/";
-    $target_file = $target_dir . basename($_FILES["mediaFile"]["name"]);
-
-    if (move_uploaded_file($_FILES["mediaFile"]["tmp_name"], $target_file)) {
-        $fileName = basename($_FILES["mediaFile"]["name"]);
-        $stmt = $connection->prepare("INSERT INTO media (file_name) VALUES (?)");
-        $stmt->bind_param("s", $fileName);
-
-        if ($stmt->execute()) {
-            echo "The file " . htmlspecialchars($fileName) . " has been uploaded.";
-        } else {
-            echo "Sorry, there was an error uploading your file.";
-        }
-
-        $stmt->close();
-    } else {
-        echo "Sorry, there was an error uploading your file.";
-    }
+if (!file_exists($upload_dir)) {
+    mkdir($upload_dir, 0777, true); // Create directory
 }
 
-$connection->close();
-header("Location: media.php");
-exit();
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_FILES["mediaFile"])) {
+        $target_file = $upload_dir . basename($_FILES["mediaFile"]["name"]);
+
+        if (move_uploaded_file($_FILES["mediaFile"]["tmp_name"], $target_file)) {
+            // File uploaded successfully
+            $filename = basename($_FILES["mediaFile"]["name"]);
+            $sql = "INSERT INTO media (file_name) VALUES ('$filename')";
+
+            if ($connection->query($sql) === TRUE) {
+                header("Location: media.php");
+                exit();
+            } else {
+                echo "Error: " . $sql . "<br>" . $connection->error;
+            }
+        } else {
+            echo "Sorry, there was an error uploading your file."; // need to fix this into modal
+        }
+    }
+}

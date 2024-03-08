@@ -56,7 +56,7 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="add_product.php" class="sidebar-link">
                         <i class="lni lni-circle-plus"></i>
                         <span>Add Product</span>
                     </a>
