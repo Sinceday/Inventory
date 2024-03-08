@@ -50,9 +50,9 @@
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-list"></i>
-                        <span>Manage Products</span>
+                    <a href="product.php" class="sidebar-link">
+                        <i class="lni lni-invest-monitor"></i>
+                        <span>Manage Stocks</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -67,12 +67,7 @@
                         <span>Media Product</span>
                     </a>
                 </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
-                        <i class="lni lni-invest-monitor"></i>
-                        <span>Stock</span>
-                    </a>
-                </li>
+
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
                         <i class="lni lni-exit"></i>

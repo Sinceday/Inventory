@@ -20,8 +20,8 @@ include 'includes/sidebar.php';
                 <a href="products.php" class="card-link">
                     <div class="card">
                         <div class="card-body">
-                            <i class="lni lni-list" style="font-size: 70px;"></i>
-                            <h5 class="card-title">Products</h5>
+                            <i class="lni lni-invest-monitor" style="font-size: 70px;"></i>
+                            <h5 class="card-title">Stocks</h5>
                         </div>
                     </div>
                 </a>
@@ -36,17 +36,6 @@ include 'includes/sidebar.php';
                     </div>
                 </a>
             </div>
-            <div class="col-md-3">
-                <a href="stock.php" class="card-link">
-                    <div class="card">
-                        <div class="card-body">
-                            <i class="lni lni-invest-monitor" style="font-size: 70px;"></i>
-                            <h5 class="card-title">Stock</h5>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
         </div>
     </div>
 </div>
